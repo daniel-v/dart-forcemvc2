@@ -10,3 +10,5 @@ pubspec.lock
 /dart-forcemvc.iml
 /.settings/
 .pub
+
+.dart_tool/
