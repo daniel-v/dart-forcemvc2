@@ -39,7 +39,7 @@ class ForceRequest implements HttpInputMessage, HttpOutputMessage {
 
   // HTTPInputMessage
   Stream getBody() {
-    return this.request.transform(const AsciiDecoder());
+    return this.request.map((l) => l.toList()).transform(const AsciiDecoder());
   }
 
   IOSink getOutputBody() {
